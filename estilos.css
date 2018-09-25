@@ -14,7 +14,9 @@ body {
   text-align: center;
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 16%);
   mask-image: linear-gradient(to bottom, transparent, black 16%);
+  transform: rotateX(75deg);
 }
+
 
 .flow {
   transform-origin: 50% 0%;
