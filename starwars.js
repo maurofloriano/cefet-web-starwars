@@ -1,11 +1,3 @@
-// Seu javascript aqui :)
-// Use a Star Wars API: https://swapi.co/
-// para carregar:
-//  - A lista de filmes
-//  - A introdução de cada filme, quando ele for clicado
-
-
-
 const idToRoman = id => {
 	let episodes = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 	return episodes[parseInt(id)];
