@@ -9,7 +9,7 @@ const changeData = data => {
 
 
 $.ajax({
-	url: 'http://swapi.co/api/films/',
+	url: 'https://swapi.co/api/films/',
 	method: 'get',
 	success: response => {
 		let $ul = $('#movies ul');
@@ -36,9 +36,9 @@ $("#movies ul").on('click', 'li', e => {
 		method: 'get',
 		success: response => {
 			let episode = idToRoman(response.episode_id);
-			let text = 'Episode ' + episode + '\n' +
-					 	response.title + '\n\n' +
-			 		    response.opening_crawl;
+                let text = 'Episode ' + episode + '\n' +
+                            response.title + '\n\n' +
+                            response.opening_crawl;
 
 			changeData(text);
 		}
